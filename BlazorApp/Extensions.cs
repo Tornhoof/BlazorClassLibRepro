@@ -24,8 +24,8 @@ namespace BlazorApp
                 {
                     // specifying this "loads" the files specified in the static web assets, but they are 0 length
                     const string manifest = "BlazorApp.staticwebassets.endpoints.json";
-                    endpoints.MapStaticAssets();
-                    endpoints.MapRazorComponents<App>().AddInteractiveServerRenderMode().WithStaticAssets();
+                    endpoints.MapStaticAssets(manifest);
+                    endpoints.MapRazorComponents<App>().AddInteractiveServerRenderMode().WithStaticAssets(manifest);
                 });
             });
         }

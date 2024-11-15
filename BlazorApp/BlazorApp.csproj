@@ -5,7 +5,7 @@
     <StaticWebAssetBasePath>app</StaticWebAssetBasePath>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <StaticWebAssetFingerprintingEnabled>false</StaticWebAssetFingerprintingEnabled>
+    <StaticWebAssetFingerprintingEnabled>true</StaticWebAssetFingerprintingEnabled>
   </PropertyGroup>
 
   <ItemGroup>
