@@ -17,6 +17,11 @@ namespace Runner
 
         public virtual void ConfigureServices(IServiceCollection services)
         {
+            services.AddOptions<ApplicationOptions>().Configure(a =>
+            {
+                a.BasePath = "app";
+                a.EntryAssemblyName = typeof(Startup).Assembly.GetName().Name!;
+            });
             services.AddApp();
             services.AddLogging();
             services.AddHttpLogging();
